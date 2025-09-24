@@ -1,12 +1,9 @@
 
 num = int(input('Enter a number: '))
-d = 1
-cnt = 0
-while d < 0:
+
+for d in range(2,(num//2)+1):
     if num % d == 0:
-        cnt = cnt + 1
-    d = d+1
-if cnt == 2:
-    print('Prime')
+        print('Not prime')
+        break
 else:
-    print('Not prime')
+    print('Prime')
